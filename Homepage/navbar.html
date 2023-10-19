@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <div id="navbar">
+            <a href="index.html"><img id="homepage-logo" src="images/[removal.ai]_73a82357-798b-4ce6-a251-ce2e13f3a654-png-clipart-logo-physician-medical-prescription-clinic-hospital-others-miscellaneous-text.png" alt="image"></a>
+            <a href="index.html">Medicines</a>
+            <a href="#">Doctor</a>
+            <a href="#">Pharmacy</a>
+            <a href="#">Other services</a>
+        </div>
+
+        <div id="homepage-icons">
+            <div id="homepage-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button id="nav_btn">Consult Now</button>
+        </div>
+
+    </header>
+</body>
+</html>
+
+<script>
+    let nav_button=document.getElementById("nav_btn");
+
+    nav_button.addEventListener("click",function(){
+        window.location.href="index.html";
+    });
+
+    let cart_icon=document.querySelector("i");
+
+    cart_icon.addEventListener("click",function(){
+        window.location.href="cart.html";
+    });
+</script>

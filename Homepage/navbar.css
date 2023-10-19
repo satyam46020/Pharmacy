@@ -1,0 +1,64 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+header{
+    width: 90%;
+    padding: 2rem;
+    padding-left: 20px;
+    padding-right: 30px;  
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#homepage-logo{
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#navbar a{
+    color: #0a525f;
+    font-size:20px;
+    margin: 0 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+}
+#navbar a:hover{
+    color: orange;
+}
+
+ #nav_btn{
+    color: #FFFFFF;
+    width: 100px;
+    height: 50px;
+    background-color: #0a525f;
+    padding: 15px 10px 15px 10px;
+    margin-top: -5px;
+    padding-left: -10px;
+    border-radius: 7px;
+    cursor: pointer;
+ }
+
+#homepage-icons{
+    display: flex;
+    gap: 30px;
+}
+#homepage-cart{
+    font-size: 30px;
+    margin-top: 2px;
+    color: #0a525f;
+    cursor: pointer;
+}
