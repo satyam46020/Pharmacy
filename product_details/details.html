@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="details.css" />
+  </head>
+  <body>
+<div id="container">
+    <div  class="left">
+        <div class="left-child">
+            <div class="big-img">
+            <img class="pic" src="img/p1.png" />
+          </div>
+         
+        </div>
+      </div>
+      <div class="right">
+          <div class="title">
+              <h1 id="name">Digene Acidity & Gas Relief Gel Orange</h1>
+              <h1 class="problem"> Acidity</h1>
+          </div>
+          <div class="ratings">
+              <p>4.3</p>
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;46k Ratings</p>
+          </div>
+          <div class="price-row">
+              <strong class="discount" id="price">Rs 500</strong>
+              <s></s>
+              <span class="offer"></span>
+          </div>
+          <span class="inclusive">inclusive of all taxes</span>
+          <div class="size-chart">
+              <p>SELECT QUANTITY</p>
+              <!-- <p>SIZE CHART</p> -->
+          </div>
+          <div class="size">
+              <div class="sel_quantity">1</div>
+              <div class="sel_quantity">2</div>
+              <div class="sel_quantity">3</div>
+              <div class="sel_quantity">4</div>
+              <div class="sel_quantity">5</div>
+          </div>
+          <div class="bag-wish">
+              <button id="bag">ADD TO BAG</button>
+              <button id="wish">WISHLIST</button>
+          </div>
+          <p class="del">DELIVERY OPTIONS</p>
+          <input type="text" placeholder="Enter pincode" id="pin">
+          <p class="pin-class">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+          <div class="para">
+              <p>100% Original Products</p>
+              <p>Pay on delivery might be available</p>
+          </div>
+          <h4>BEST OFFERS</h4>
+          <div class="para2">
+              <ul>
+                  <li>Applicable on: Orders above Rs. 999 (only on first purchase)</li>
+                  <li>Coupon code: <strong>MED200</strong></li>
+              </ul>
+              <p>View Eligible Products</p>
+          </div>
+          <b>EMI Option Available</b>
+          <div class="para3">
+              <ul>
+                  <li>EMI starting at Rs 17/month</li>
+              </ul>
+              <p>View plans</p>
+          </div>
+  
+          <!-- Product Details Section -->
+          <div class="product-details">
+              <h2>PRODUCT DETAILS</h2>
+              <p class="product-detailsP">This medicine is to cure the disease and will definitely help you to get cured from your prolem.</p>
+              <h3>Problem</h3>
+              <p class="problem"></p>
+
+          </div>
+          
+      </div>
+</div>
+   
+</div>
+
+    <script src="./details.js"></script>
+    <script>
+      let bigImg = document.querySelector(".big-img img");
+      function showImg(pic) {
+        bigImg.src = pic;
+      }
+    </script>
+  </body>
+</html>
