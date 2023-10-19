@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING BAG</title>
+    <link rel="stylesheet" href="cartPage.css">
+</head>
+
+<body>
+    <!-- <div id="headerMain">
+        navbar section
+    </div> -->
+
+    <div id="parent">
+        <div id="leftBlock">
+            <div>
+                <div id="addstrip">
+                    <div>
+                        Check delivery time and services
+                    </div>
+                    <button style="border:1px solid grey;">
+                        <div style="color: #03a685;">ENTER PIN CODE</div>
+                    </button>
+                </div>
+                <div id="offer">
+                    <div>
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0DSNOz-ECEaUf3OUgCFD0kl7g10M3Cm9g_Fu9s7C2ciOQtVCV"
+                            alt="">
+                        <div id="percent">
+                            <p>Available Offers</p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div>
+
+                            <p>10% Instant Discount on Kotak Credit and Debit Cards on a min spend of</p>
+                            <p> Rs 2,500.TCA</p>
+                        </div>
+                        <p style="color: #03a685;">Show More</p>
+                    </div>
+                </div>
+                <div style="background-color: aquamarine;">
+                    <img height="22" width="32" src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp"
+                        alt="">
+                    <p >Yay! <span style="font-weight: bold;">No convenience fee</span> on this order</p>
+                </div>
+                <div id="bulkAction">
+
+                    <div id="itemselected"> ITEMS SELECTED</div>
+                    <div>
+                        <button>REMOVE</button>
+                        <button>MOVE TO WISHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <div id="cartitemparent" class="cartitemparent">
+            </div>
+        </div>
+        <div id="rightBlock">
+            <div id="coupons">
+                <p>COUPONS</p>
+                <div style="background-color:#24aeb1;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpGgbNAMKyioUwo_sp186ewqSwTCHWYkmqhyydewTp0KHoEnqH"
+                        alt="">
+                    <p>Apply Coupons</p>
+                    <button  style="color: #03a685 ; border: black;"   onclick="opencoupon()">APPLY</button>
+                </div>
+                <div style="background-color:#24aeb1;">
+                    Get upto ₹99 OFF on first order
+                </div>
+            </div>
+            <div id="priceContainer">
+                <div>PRICE DETAILS (<span id="priceDetails">0</span> Items)</div>
+                <div id="priceBreakup">
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="popupdiv" id="popupdiv">
+                <div id="crossselect" onclick="closePopup()" style="cursor: pointer;">
+                    <div>Select Quanity</div>
+                    <div>
+                        <img src="https://cdn.onlinewebfonts.com/svg/img_265949.png" alt="">
+                    </div>
+                </div>
+                <div id="numdiv">
+                    <div id="num1">1</div>
+                    <div id="num2">2</div>
+                    <div id="num3">3</div>
+                    <div id="num4">4</div>
+                    <div id="num5">5</div>
+                </div>
+                <button id="done" onclick="closePopup()">
+                    <div>DONE</div>
+                </button>
+            </div>
+            <div class="popupdiv" id="couponpopup">
+                <div id="crossselect" onclick="closecoupon()" style="cursor: pointer;">
+                    <div>APPLY COUPONS</div>
+                    <div>
+                        <img src="https://cdn.onlinewebfonts.com/svg/img_265949.png" alt="">
+                    </div>
+                </div>
+                <div id="coupon-form-input">
+                    <div id="inputdiv">
+                        <input type="number" placeholder="Enter couponcode">
+                        <div>CHECK</div>
+                    </div>
+                </div>
+                <div id="couponform">
+                    <button onclick="applyCoupon()">Code: 25GET</button>
+                    <p>Save ₹99</p>
+                    <p>Coupon applicable on your medicine order above Rs. 1000.</p>
+                    <p>Expires on: 31st December 2023</p>
+                </div>
+                <div>
+                    <div id="saving">
+                        <div>
+                            <p>Maximum savings:</p>
+                            <p>₹99</p>
+                        </div>
+                        <div>
+                            <button style="background-color:#0a525f;" id="done" onclick="closecoupon()">
+                                <div >APPLY</div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerContent">
+            <div id="footerContentImg">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt="">
+                <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt="">
+            </div>
+            <a href="#">Need Help ? Contact Us</a>
+        </div>
+    </div>
+
+
+</body>
+<script src="cartPage.js"></script>
+
+</html>
