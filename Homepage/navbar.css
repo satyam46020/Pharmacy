@@ -9,11 +9,12 @@ header{
     padding: 2rem;
     padding-left: 20px;
     padding-right: 30px;  
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     z-index: 100;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
     align-items: center;
 }
 

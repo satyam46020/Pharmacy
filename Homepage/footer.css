@@ -4,10 +4,10 @@
 	padding:0;
 	box-sizing: border-box;
 }
-#footer-body{
+/* #footer-body{
 	line-height: 1.5;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 .footer-container{
 	max-width: 1170px;
 	margin:auto;
