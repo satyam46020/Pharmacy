@@ -52,8 +52,9 @@
         text-decoration: none;
         margin: 15px 0;
       }
-      a:hover{
-        text-decoration: underline;
+      .social-container div:hover{
+        cursor: pointer;
+        /* text-decoration: underline; */
       }
 
       button {
@@ -80,6 +81,10 @@
       button.ghost {
         background-color: transparent;
         border-color: #ffffff;
+      }
+
+      button:hover{
+        cursor: pointer;
       }
 
       form {
@@ -230,7 +235,7 @@
         margin: 20px 0;
       }
 
-      .social-container a {
+      .social-container div {
         
         border-radius: 50%;
         display: inline-flex;
@@ -240,13 +245,13 @@
         height: 40px;
         width: 40px;
       }
-      .social-container a:nth-child(1) {
-        border: 1px solid #0606b5;
-      }
-      .social-container a:nth-child(2) {
+      .social-container div:nth-child(1) {
         border: 1px solid #b50606;
       }
-      .social-container a:nth-child(3) {
+      .social-container div:nth-child(2) {
+        border: 1px solid #0606b5;
+      }
+      .social-container div:nth-child(3) {
         border: 1px solid #110334;
       }
       #tostBox{
@@ -338,6 +343,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
   <body>
     <div id="tostBox"></div>
@@ -346,9 +352,9 @@
         <form id="signUp_action">
           <h1>Create Account</h1>
           <div class="social-container">
-            <a href="" class="social"><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+            <div id="google" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></div>
+            <div id="Twitter" class="social"><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></div>
+            <div class="social"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #1859c9;"></i></div>
           </div>
           <span>or use your email for registration</span>
           <input id="up_name" type="text" placeholder="Name" />
@@ -361,9 +367,11 @@
         <form id="signIn_action">
           <h1>Sign in</h1>
           <div class="social-container">
-            <a href="" class="social"><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+            <div id="google" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></div>
+            <div id="Twitter" class="social"></i><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></div>
+            <div class="social"><i class="fa-brands fa-linkedin-in fa-xl"  style="color: #1859c9;"></i></div>
+            <!-- <a href="#" onclick="" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></a>
+            <a href="#" class="social"><i class="fa-brands fa-linkedin-in fa-xl"></i></a> -->
           </div>
           <span>or use your account</span>
           <input id="in_email" type="email" placeholder="Email" />
