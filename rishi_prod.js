@@ -20,43 +20,43 @@ let immunity = document.getElementById("immunity");
 let diabetes = document.getElementById("diabetes");
 
 liquid.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`product_form=liquid`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`product_form=liquid`)
 })
 
 tablet.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`product_form=tablets`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`product_form=tablets`)
 })
 
 cream.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`product_form=cream`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`product_form=cream`)
 })
 
 syrup.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`product_form=strips`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`product_form=strips`)
 })
 
 acidity.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`problem=Acidity`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`problem=Acidity`)
 })
 
 immunity.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`problem=Immunity`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`problem=Immunity`)
 })
 
 diabetes.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`problem=Diabetes`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`problem=Diabetes`)
 })
 
 soap.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`product_form=soap`)
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`product_form=soap`)
 })
 
 
 sortAtoZBtn.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`_sort=price&_order=asc`);
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`_sort=price&_order=asc`);
   })
   sortZtoABtn.addEventListener("click",()=>{
-    fetchData(`${urlProduct}?_page=1&_limit=5`,`_sort=price&_order=desc`);
+    fetchData(`${urlProduct}?_page=1&_limit=6`,`_sort=price&_order=desc`);
   })
 
 async function fetchData(url,quaryParams =""){
@@ -77,7 +77,7 @@ async function fetchData(url,quaryParams =""){
    }
   
   
-  fetchData(`${urlProduct}?_page=1&_limit=5`);
+  fetchData(`${urlProduct}?_page=1&_limit=6`);
   
   function pagination(total,limit,quaryParams){
      let totalpage = Math.ceil(total/limit);
@@ -86,10 +86,10 @@ async function fetchData(url,quaryParams =""){
      for(let i=1;i<=totalpage;i++){
        let btn = document.createElement("button");
        btn.className = "pagination-button";
-       btn.dataset.id = i;
+    //    btn.dataset.id = i;
        btn.innerHTML = i;
        btn.addEventListener("click",()=>{
-         fetchData(`${urlProduct}?_page=${i}&_limit=5`,quaryParams)
+         fetchData(`${urlProduct}?_page=${i}&_limit=6`,quaryParams)
             paginationWrapper.append(btn);
        })
        paginationWrapper.append(btn);
@@ -106,9 +106,13 @@ async function fetchData(url,quaryParams =""){
   
     let card = document.createElement("div");
     card.setAttribute("class","card");
+    
   
     let cardImg = document.createElement("div");
     cardImg.setAttribute("class","card-img");
+    cardImg.addEventListener("click",()=>{
+        window.location.href = "desc.html";
+    })
   
     let image = document.createElement("img");
   
@@ -129,10 +133,10 @@ async function fetchData(url,quaryParams =""){
   
     
   
-    let a = document.createElement("a");
+    let a = document.createElement("button");
     a.setAttribute("class","card-link");
-    a.setAttribute("data-id",item.id);
-    a.href = "#";
+    
+   
     a.textContent = "Add To Cart";
     a.addEventListener("click",()=>{
         addToCart(item);
@@ -163,3 +167,19 @@ function addToCart(Element){
 //     wishlist.push(Element)
 //     localStorage.setItem("wishlist", JSON.stringify(wishlist))
 // }
+
+// navbar
+
+let nav_button=document.getElementById("nav_btn");
+
+nav_button.addEventListener("click",function(){
+    window.location.href="index.html";
+});
+
+let cart_icon=document.querySelector("i");
+
+cart_icon.addEventListener("click",function(){
+    window.location.href="cart.html";
+});
+
+
