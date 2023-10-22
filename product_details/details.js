@@ -8,11 +8,6 @@ getDetails.forEach(val => {
     title.textContent=val.name;
     const cost=document.querySelector("#price");
     cost.textContent=` ₹ ${val.price}`;
-    // const strikedOffPrice=document.querySelector("s");
-    // strikedOffPrice.textContent=`₹ ${Math.round(val.price + val.price*(val.discount/100))}`
-    // const off=document.querySelector(".offer");
-    // off.textContent=`(${val.discount} % Off)`
-    // console.log(val);
     const fpt=document.querySelector(".fpt");
     const Spt=document.querySelector(".Spt");
     const Thpt=document.querySelector(".Thpt");
@@ -42,19 +37,7 @@ getDetails.forEach(val => {
 });
 
 let items = JSON.parse(localStorage.getItem("cartData")) || [];
-// var sel_quantity=document.querySelector(".sel_quantity")
-//     sel_quantity.addEventListener("click",fn)
-//     function fn(){
-//     for(var i=1;i<=5;i++)
-//     {
-//       if(sel_quantity.innerHTML==i)
-//       {
-//         currFav.quantity==i
-//       }
-
-//     }}
 function addingToCart(val,a){
-    // const AddToCart=document.querySelector("button");
    const existingItem = items.find(item => item.name === val.name);
    if (existingItem) {
     existingItem.quantity = (existingItem.quantity || 1)+1;
@@ -67,7 +50,7 @@ function addingToCart(val,a){
       price: val.price,
       problem: val.problem,
       product_form: val.product_form,
-      quantity: 1, // Initialize quantity to 1 for new items
+      quantity: 1,
     };
     
     items.push(currFav);
