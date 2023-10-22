@@ -2,14 +2,17 @@ body {
     font-family: Whitney, Helvetica, Arial, sans-serif !important;
     color: #424553;
 }
- a {
-    text-decoration: none !important; /* Remove underline or other link decorations */
+
+a {
+    text-decoration: none !important;
+    /* Remove underline or other link decorations */
     /* Add other styling for the Home text, like color, font, etc. */
-  }
-  a>h2{
+}
+
+a > h2 {
     color: #03a685;
-  }
- 
+}
+
 #headerMain {
     line-height: 2.428571;
     width: 100%;
@@ -78,13 +81,13 @@ body {
 
 }
 
-#addstrip>div {
+#addstrip > div {
     font-size: 14px;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#addstrip>button {
+#addstrip > button {
     padding: 8px 16px;
     font-size: 12px;
     font-weight: 600;
@@ -110,43 +113,43 @@ body {
 
 }
 
-#offer>div {
+#offer > div {
     display: flex;
     align-items: center;
 
 }
 
-#offer>div>img {
+#offer > div > img {
     width: 18px;
     height: 18px;/ margin-top: 10px;
     margin-right: 30px;
 }
 
-#percent>p {
+#percent > p {
     font-weight: 10px;
 }
 
-#offer>div:last-child {
+#offer > div:last-child {
     display: block;
     text-align: justify;
 }
 
-#offer>div:last-child>div {
+#offer > div:last-child > div {
 
     padding-left: 20px;
 
 }
 
-#offer>div:last-child>div>p {
+#offer > div:last-child > div > p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#offer>div:last-child>div>p:last-child {
+#offer > div:last-child > div > p:last-child {
     margin-left: 2px;
 }
 
-#offer>div:last-child>p {
+#offer > div:last-child > p {
     margin-left: 22px;
     margin-top: 10px;
     font-size: 14px;
@@ -155,14 +158,14 @@ body {
     font-weight: 500;
 }
 
-#percent>p {
+#percent > p {
     margin-top: 8px;
     font-weight: 600;
     font-size: 14px;
 
 }
 
-#offer>div {
+#offer > div {
     padding-left: 15px;
     text-indent: -15px;
     list-style: none;
@@ -170,7 +173,7 @@ body {
     margin-bottom: 8px;
 }
 
-#offer+div {
+#offer + div {
     padding: 8px;
     background: #fff;
     border: 1px solid #eaeaec;
@@ -178,7 +181,7 @@ body {
 
 }
 
-#offer+div>p {
+#offer + div > p {
     display: inline-block;
     margin: 0;
     margin-left: 10px;
@@ -222,7 +225,7 @@ body {
 
 }
 
-#cartitemparent>div {
+#cartitemparent > div {
     border: 1px solid #eaeaec;
     padding: 8px;
     margin-top: 10px;
@@ -238,7 +241,7 @@ body {
     display: block;
 }
 
-#coupons>div>p {
+#coupons > div > p {
     display: inline-block;
     font-weight: 600;
     font-size: 14px;
@@ -246,7 +249,7 @@ body {
     padding: 7px 0;
 }
 
-#coupons>div>button {
+#coupons > div > button {
     display: inline-block;
     font-size: 12px;
     padding: 4px 16px;
@@ -264,14 +267,14 @@ body {
     margin-bottom: 16px;
 }
 
-#priceContainer>p {
+#priceContainer > p {
     font-size: 12px;
     font-weight: 600;
     margin: 24px 0 16px;
     color: #535766;
 }
 
-#priceBreakup>div {
+#priceBreakup > div {
     margin-bottom: 12px;
     line-height: 16px;
 }
@@ -289,7 +292,7 @@ body {
 
 }
 
-.leftchild>Img {
+.leftchild > Img {
     height: 150px;
     width: 111px;
 
@@ -305,11 +308,11 @@ body {
 
 }
 
-.rightchild>div {
+.rightchild > div {
     margin: 7px;
 }
 
-.rightchild>div:nth-child(1) {
+.rightchild > div:nth-child(1) {
     font-size: 17px;
     font-weight: 600;
 }
@@ -321,23 +324,23 @@ body {
 
 }
 
-.rightchild>div:nth-child(3)>button {
+.rightchild > div:nth-child(3) > button {
     cursor: pointer;
 
 }
 
-.rightchild>div:nth-child(4) {
+.rightchild > div:nth-child(4) {
     display: flex;
     margin-left: 0;
 
 
 }
 
-.rightchild>div:nth-child(4)>p {
+.rightchild > div:nth-child(4) > p {
     margin-top: 5px;
 }
 
-.rightchild>div:last-child {
+.rightchild > div:last-child {
     margin-top: -10px;
 }
 
@@ -360,7 +363,7 @@ body {
     margin-right: 15px;
 }
 
-.crossdiv>img {
+.crossdiv > img {
     position: relative;
     top: 2px;
     right: 2px;
@@ -378,14 +381,14 @@ body {
     height: 16px;
 }
 
-#coupons>div {
+#coupons > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 15px;
 }
 
-#coupons>div:nth-child(3) {
+#coupons > div:nth-child(3) {
     padding-bottom: 10px;
     border-bottom: 1px solid #eaeaec;
     font-size: 14px;
@@ -398,7 +401,7 @@ body {
     padding-top: 15px;
 }
 
-#priceContainer>div:first-child {
+#priceContainer > div:first-child {
     font-weight: 600;
     font-size: 12px;
 
@@ -410,7 +413,7 @@ body {
     padding-top: 20px;
 }
 
-#priceBreakup>div {
+#priceBreakup > div {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
@@ -419,16 +422,16 @@ body {
     color: #282c3f;
 }
 
-#priceBreakup>div:nth-child(3)>div:last-child {
+#priceBreakup > div:nth-child(3) > div:last-child {
     color: #ff3f6c;
     cursor: pointer;
 }
 
-#priceBreakup>div:nth-child(2)>div:last-child {
+#priceBreakup > div:nth-child(2) > div:last-child {
     color: #03a685;
 }
 
-#priceBreakup>div:nth-child(5) {
+#priceBreakup > div:nth-child(5) {
     padding-top: 15px;
     padding-bottom: 5px;
     border-top: 1px solid #eaeaec;
@@ -437,7 +440,7 @@ body {
     font-size: 15px;
 }
 
-#priceBreakup>button {
+#priceBreakup > button {
     width: 100%;
     height: 40px;
     background-color: rgb(255, 63, 108);
@@ -496,7 +499,7 @@ body {
 
 }
 
-#numdiv>div {
+#numdiv > div {
     border: 1px solid black;
     border-radius: 25px;
     height: 35px;
@@ -555,7 +558,7 @@ body {
     height: 37px;
 }
 
-#footerContent>a {
+#footerContent > a {
     text-decoration: none;
     color: #282c3f;
     font-weight: 600;
@@ -569,7 +572,7 @@ body {
     justify-content: space-between;
 }
 
-#inputdiv>input {
+#inputdiv > input {
     width: 120%;
     height: 30px;
     border: none;
@@ -581,7 +584,7 @@ body {
     border: 1px solid #535766;
 }
 
-#inputdiv>input+div {
+#inputdiv > input + div {
     margin-top: 4px;
     margin-right: 10px;
 }
@@ -594,7 +597,7 @@ body {
 
 }
 
-#couponform>button {
+#couponform > button {
     color: #ff3f6c;
     border: 1px dashed #ff3f6c;
     border-radius: 3px;
@@ -605,7 +608,7 @@ body {
     font-weight: 600;
 }
 
-#saving>div:first-child {
+#saving > div:first-child {
     display: flex;
     justify-content: space-between;
     padding-right: 12px;
@@ -614,6 +617,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#saving>div:nth-child(2) {
+#saving > div:nth-child(2) {
     padding-bottom: 20px;
+}
+
+#parent {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    background-color: white;
 }
