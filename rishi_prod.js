@@ -129,7 +129,7 @@ async function fetchData(url,quaryParams =""){
   
     let cprice = document.createElement("p");
     cprice.setAttribute("class","card-price");
-    cprice.textContent = item.price;
+    cprice.textContent = `Rs. ${item.price}`;
   
     
   
