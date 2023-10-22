@@ -21,6 +21,8 @@ getDetails.forEach(val => {
     Thpt.textContent=`Selling Price:  ₹ ${Math.round(val.price + val.price*(val.discount/100))} (Incl. of all taxes)`
     const problem=document.querySelector(".problem");
     problem.textContent=val.problem;
+    const foot=document.querySelector(".foot");
+    foot.textContent=val.problem;
     const description=document.querySelector(".product-detailsP");
 
     description.textContent=val.description;
@@ -40,17 +42,17 @@ getDetails.forEach(val => {
 });
 
 let items = JSON.parse(localStorage.getItem("cartData")) || [];
-var sel_quantity=document.querySelector(".sel_quantity")
-    sel_quantity.addEventListener("click",fn)
-    function fn(){
-    for(var i=1;i<=5;i++)
-    {
-      if(sel_quantity.innerHTML==i)
-      {
-        currFav.quantity==i
-      }
+// var sel_quantity=document.querySelector(".sel_quantity")
+//     sel_quantity.addEventListener("click",fn)
+//     function fn(){
+//     for(var i=1;i<=5;i++)
+//     {
+//       if(sel_quantity.innerHTML==i)
+//       {
+//         currFav.quantity==i
+//       }
 
-    }}
+//     }}
 function addingToCart(val,a){
     // const AddToCart=document.querySelector("button");
    const existingItem = items.find(item => item.name === val.name);
@@ -67,21 +69,49 @@ function addingToCart(val,a){
       product_form: val.product_form,
       quantity: 1, // Initialize quantity to 1 for new items
     };
-    var sel_quantity=document.querySelector(".sel_quantity")
-    sel_quantity.addEventListener("click",fn)
-    function fn(){
-    for(var i=1;i<=5;i++)
-    {
-      if(sel_quantity.innerHTML==i)
-      {
-        currFav.quantity==i
-      }
-
-    }}
+    
     items.push(currFav);
     a.textContent="Added!";
     bagtot();
-  }
+    document.getElementById("num1").addEventListener("click", function () {
+      var num = parseInt(event.target.innerText);
+      multiplyQty(element, num, getDetails, i);
+})
+document.getElementById("num2").addEventListener("click", function () {
+    var num = parseInt(event.target.innerText);
+    multiplyQty(element, num, getDetails, i);
+})
+document.getElementById("num3").addEventListener("click", function () {
+    var num = parseInt(event.target.innerText);
+    multiplyQty(element, num, getDetails, i);
+  })
+  document.getElementById("num4").addEventListener("click", function () {
+    var num = parseInt(event.target.innerText);
+    multiplyQty(element, num, getDetails, i);
+  })
+  document.getElementById("num5").addEventListener("click", function () {
+    var num = parseInt(event.target.innerText);
+    multiplyQty(element, num, getDetails, i);
+  })
+  
+}
+  function multiplyQty(element, num, getDetails, i) {
+    var num1 = parseInt(getDetails[i].quantity);
+    getDetails[i].quantity = num;
+    var price = parseInt(getDetails[i].price);
+    
+    document.getElementById("price").innerText = price * num;
+    
+    var strikedOffPrice = parseInt(getDetails[i].strikedOffPrice);
+    
+    document.getElementById("strikedOffPrice").innerText = strikedOffPrice * num;
+    localStorage.setItem("cartData", JSON.stringify(getDetails));
+    console.log(totalamt + "totalamtqty");
+    displayData(getDetails);
+
+    element = {};
+    index = 0;
+}
          
   
      localStorage.setItem("cartData", JSON.stringify(items));

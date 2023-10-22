@@ -7,25 +7,61 @@
     <title>Product Details Page</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="details.css" />
-  </head>
+    <link rel="stylesheet" href="../common/navbar.css">
+    <link rel="stylesheet" href="../common/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
   <body>
-<div id="container">
-    <div  class="left">
+    <header>
+      <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items">
+            <li><a href="">Medicines</a></li>
+            <li><a href="">Doctor</a></li>
+            <li><a href="">Pharmacy</a></li>
+            <li><a href="">Other Services</a></li>
+            <li><a href="">Login</a></li>
+          </div>
+      </div>
+
+      <div id="navbar">
+          <a href="index.html"><img id="homepage-logo" src="images/[removal.ai]_73a82357-798b-4ce6-a251-ce2e13f3a654-png-clipart-logo-physician-medical-prescription-clinic-hospital-others-miscellaneous-text.png" alt="image"></a>
+          <a class="navbar-anchors" href="index.html">Medicines</a>
+          <a class="navbar-anchors" href="#">Doctor</a>
+          <a class="navbar-anchors" href="#">Pharmacy</a>
+          <a class="navbar-anchors" href="#">Other services</a>
+      </div>
+
+      <div id="homepage-icons">
+          <div id="homepage-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <button id="nav_btn">Consult Now</button>
+      </div>
+
+  </header>
+  <div style="background-image: https://png.pngtree.com/back_origin_pic/04/57/88/bd90d67d6a09e0952d804fbff5511f9e.jpg " id="container">
+      <div  class="left">
         <div class="left-child">
-            <div class="big-img">
+          <div class="big-img">
             <img class="pic" src="img/p1.png" />
           </div>
-         
+          
         </div>
       </div>
       <div class="right">
-          <div class="title">
+        <div class="title">
               <h1 id="name">Digene Acidity & Gas Relief Gel Orange</h1>
               <h1 class="problem"> Acidity</h1>
           </div>
           <div class="ratings">
-              <p>4.3</p>
-              <p> &nbsp;&nbsp;&nbsp;&nbsp;46k Ratings</p>
+            <p> 4.1</p>
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;1.3k Ratings</p>
           </div>
           <div class="price-row">
               <strong class="discount" id="price">Rs 500</strong>
@@ -35,62 +71,110 @@
           <span class="inclusive">inclusive of all taxes</span>
           <div class="size-chart">
               <p>SELECT QUANTITY</p>
-              <!-- <p>SIZE CHART</p> -->
           </div>
           <div class="size">
-              <div class="sel_quantity">1</div>
-              <div class="sel_quantity">2</div>
-              <div class="sel_quantity">3</div>
-              <div class="sel_quantity">4</div>
-              <div class="sel_quantity">5</div>
+              <div id="num1">1</div>
+              <div id="num2">2</div>
+              <div id="num3">3</div>
+              <div id="num4">4</div>
+              <div id="num5">5</div>
           </div>
           <div class="bag-wish">
-              <button id="bag">ADD TO BAG</button>
+              <button id="bag">ADD TO CART</button>
               <button id="wish">WISHLIST</button>
           </div>
-          <p class="del">DELIVERY OPTIONS</p>
-          <input type="text" placeholder="Enter pincode" id="pin">
-          <p class="pin-class">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
-          <div class="para">
-              <p>100% Original Products</p>
-              <p>Pay on delivery might be available</p>
           </div>
-          <h4>BEST OFFERS</h4>
-          <div class="para2">
-              <ul>
-                  <li>Applicable on: Orders above Rs. 999 (only on first purchase)</li>
-                  <li>Coupon code: <strong>MED200</strong></li>
-              </ul>
-              <p>View Eligible Products</p>
-          </div>
-          <b>EMI Option Available</b>
-          <div class="para3">
-              <ul>
-                  <li>EMI starting at Rs 17/month</li>
-              </ul>
-              <p>View plans</p>
-          </div>
-  
-          <!-- Product Details Section -->
-          <div class="product-details">
-              <h2>PRODUCT DETAILS</h2>
-              <p class="product-detailsP">This medicine is to cure the disease and will definitely help you to get cured from your prolem.</p>
-              <h3>Problem</h3>
-              <p class="problem"></p>
-
-          </div>
-          
       </div>
-</div>
-   
-</div>
+      <div id="more_details">
+        <p class="del">DELIVERY OPTIONS</p>
+        <input type="text" placeholder="Enter pincode" id="pin">
+        <p class="pin-class">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+        <div class="para">
+            <p>100% Original Products</p>
+            <p>Pay on delivery might be available</p>
+        </div>
+        <h4>BEST OFFERS</h4>
+        <div class="para2">
+            <ul>
+                <li>Applicable on: Orders above Rs. 1000 (only on first purchase)</li>
+                <li>Coupon code: <strong>MED200</strong></li>
+            </ul>
+            <p>View Eligible Products</p>
+        </div>
+        <b>EMI Option Available</b>
+        <div class="para3">
+            <ul>
+                <li>EMI starting at Rs 17/month</li>
+            </ul>
+            <p>View plans</p>
+            <h2>PRODUCT DETAILS</h2>
+            <h4 class="product-detailsP">This medicine is to cure the disease you suffered from and will definitely help you out to get cured from your problem.</h4>
+            
+        </div>
 
+        <!-- Product Details Section -->
+        <div class="product-details">
+            
+          <h2 class="foot"></h2>
+        </div>
+</div>
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>All Medicine</h4>
+              <ul>
+                  <li><a href="#">Health & Care</a></li>
+                  <li><a href="#">Beauty Care</a></li>
+
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Doctors</h4>
+              <ul>
+                  <li><a href="#">Physiotherapy</a></li>
+                  <li><a href="#">Heart Specialist</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Hospital</h4>
+              <ul>
+                  <li><a href="#">Government Listed</a></li>
+                  <li><a href="#">Top Private</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- </div> -->
+
+  </body>
+</html>
     <script src="./details.js"></script>
     <script>
       let bigImg = document.querySelector(".big-img img");
       function showImg(pic) {
         bigImg.src = pic;
       }
-    </script>
-  </body>
-</html>
+    
+      let nav_button=document.getElementById("nav_btn");
+  
+      nav_button.addEventListener("click",function(){
+          window.location.href="index.html";
+      });
+  
+      let cart_icon=document.querySelector("i");
+  
+      cart_icon.addEventListener("click",function(){
+          window.location.href="cart.html";
+      });
+  </script>
