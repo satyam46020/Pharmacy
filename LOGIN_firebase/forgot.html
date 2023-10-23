@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password Reset</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/forgot.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <form id="Reset">
+            <h1>Reset your password</h1>
+            <!-- <div class="Input-box">
+                <input id="name" type="text" placeholder="Username"><i class='bx bx-user'></i>
+            </div> -->
+            <div class="Input-box">
+                <input id="email" type="email" placeholder="Email"><i class='bx bxs-envelope'></i>
+            </div>
+            <!-- <div class="Input-box">
+                <input id="password" type="password" placeholder="OTP"><i class='bx bxs-chat'></i>
+            </div> -->
+
+            <button type="submit" class="btn">Reset</button>
+            <div class="register-link">
+                <p>Back to <a href="/index.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <div id="tostBox">
+
+    </div>
+    <div class="popup">
+
+        <h2><br>Thank You !</h2><br>
+        <p>Your details is sucessfully submitted. Thanks!&nbsp;&nbsp;&nbsp;&nbsp;<br> Password reset email has been send to your email id.</p>
+        <img src="https://thumbs.dreamstime.com/b/welcome-to-our-medical-center-smiling-female-doctor-opens-his-hands-flat-cartoon-style-design-vector-illustration-white-185665696.jpg"
+            alt="">
+        <p>Back to login page</p>
+        <button type="button">Ok</button>
+
+    </div>
+</body>
+
+</html>
+<script type="module">
+
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail  } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyBtmH-AgoimpvhZXvgW36ISKZI8DhVh-BE",
+        authDomain: "project1-masai.firebaseapp.com",
+        projectId: "project1-masai",
+        storageBucket: "project1-masai.appspot.com",
+        messagingSenderId: "340253418095",
+        appId: "1:340253418095:web:d9275b67bcd9b3a5f6639a",
+        measurementId: "G-RG4YFPJRMK"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+
+    document.querySelector("#Reset").addEventListener("submit", (e) => {
+        e.preventDefault();
+        let email = document.querySelector("#email").value;
+        const auth = getAuth();
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                // Password reset email sent!
+                // ..
+                console.log("Password reset email sent!")
+                openpop();
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                showtost(errorMessage);
+            });
+    })
+
+
+
+    var tostBox = document.getElementById("tostBox");
+    function showtost(cre) {
+        var tost = document.createElement("div");
+        tost.classList.add("tost");
+        tost.innerHTML = "<i class='bx bxs-x-circle'></i>" + cre;
+        tostBox.appendChild(tost);
+        setTimeout(() => {
+            tost.remove();
+        }, 1500);
+
+    }
+    var popup = document.querySelector(".popup");
+    function openpop() {
+        popup.classList.add("popup-open");
+    }
+
+    document.querySelector(".popup button").addEventListener("click", function () {
+        window.location.href = "/index.html";
+    })
+</script>
+</script>
