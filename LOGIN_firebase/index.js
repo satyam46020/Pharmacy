@@ -69,10 +69,11 @@ document.getElementById("signUp_action").addEventListener("submit", (e) => {
 document.getElementById("signIn_action").addEventListener("submit", (e) => {
 
     e.preventDefault();
+    console.log("clicked on log in")
     let email = document.querySelector("#in_email").value;
     let password = document.querySelector("#in_pass").value;
 
-    const auth = getAuth();
+    const auth = getAuth(app);
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 
@@ -80,11 +81,15 @@ document.getElementById("signIn_action").addEventListener("submit", (e) => {
             const user = userCredential.user;
             console.log("login Succesful")
             showtost("login Succesful");
+            window.location.href = "/index.html";
             // ...
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            console.error(`Error code: ${errorCode}`);
+            console.error(`Error message: ${errorMessage}`);
+            showtost(errorMessage)
         });
 
 
@@ -106,6 +111,7 @@ function handleGoogleClick(e) {
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
             const user = result.user;
+            window.location.href = "/index.html"
             // ...
         })
         .catch((error) => {
