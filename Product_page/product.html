@@ -4,68 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link rel="stylesheet" href="rishi_prod.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../Homepage/navbar.css">
+    <link rel="stylesheet" href="../Homepage/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
 </head>
 <body>
-    
 
-        <div class="heading">
-            <h2 id="small"> Most recommended</h2>
-        <h1 id="large">Products</h1>
+    <!-- Navbar -->
+    <header>
+        <div class="nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+            <div class="menu-items">
+              <li><a href="product.html">Medicines</a></li>
+              <li><a href="#">Doctor</a></li>
+              <li><a href="#">Pharmacy</a></li>
+              <li><a href="#">Other Services</a></li>
+              <li><a href="#">Login</a></li>
+            </div>
         </div>
 
-        <!-- Navbar -->
+        <div id="navbar">
+            <a href="../index.html"><img id="homepage-logo" src="../Homepage/images/[removal.ai]_73a82357-798b-4ce6-a251-ce2e13f3a654-png-clipart-logo-physician-medical-prescription-clinic-hospital-others-miscellaneous-text.png" alt="image"></a>
+            <a class="navbar-anchors" href="product.html">Medicines</a>
+            <a class="navbar-anchors" href="#">Doctor</a>
+            <a class="navbar-anchors" href="#">Pharmacy</a>
+            <a class="navbar-anchors" href="#">Other services</a>
+        </div>
 
+        <div id="homepage-icons">
+            <div id="homepage-cart">
+                <a href="../Cart/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <button id="nav_btn">Consult Now</button>
+        </div>
 
-        <header>
-          <div class="nav-container">
-              <input class="checkbox" type="checkbox" name="" id="" />
-              <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </div>
-              <div class="menu-items">
-                <li><a href="">Medicines</a></li>
-                <li><a href="">Doctor</a></li>
-                <li><a href="">Pharmacy</a></li>
-                <li><a href="">Other Services</a></li>
-                <li><a href="">Login</a></li>
-              </div>
-          </div>
-  
-          <div id="navbar">
-              <a href="index.html">Home</a>
-              <a class="navbar-anchors" href="index.html">Medicines</a>
-              <a class="navbar-anchors" href="#">Doctor</a>
-              <a class="navbar-anchors" href="#">Pharmacy</a>
-              <a class="navbar-anchors" href="#">Other services</a>
-          </div>
-  
-          <div id="homepage-icons">
-              <div id="homepage-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-              <button id="nav_btn">Consult Now</button>
-          </div>
-  
-      </header>
+    </header>
         
+      <div class="heading">
+          <h2 id="small"> Most recommended</h2>
+      <h1 id="large">Products</h1>
+      </div>
        
     
-   <div class="container">
-     <!-- Left side -->
+      <div class="container">
+          <!-- Left side -->
      <div class="left">
         <h2>Product categories</h2>
         <ul>
-         <li id="sort-high-to-low">Sort High to Low</li>
-         <li id="sort-low-to-high">Sort Low to High</li>
+            <li id="sort-high-to-low">Sort High to Low</li>
+            <li id="sort-low-to-high">Sort Low to High</li>
          <li id="liquid">Liquid</li>
          <li id="soap">Soap</li>
          <li id="tablet">Tablets</li>
@@ -136,4 +132,4 @@
 
 </body>
 </html>
-<script src="rishi_prod.js"></script>
+<script src="product.js"></script>

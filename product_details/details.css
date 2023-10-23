@@ -38,6 +38,18 @@
   gap: 5%;
 }
 
+.left{
+  width: 60%;
+}
+.big-img{
+  width: 250px;
+ margin: 140px;
+ height: 200px;
+}
+.big-img img{
+  margin-left: 40px;
+  height: 90%;
+}
 .right {
   height: auto;
   margin-top: 60px;

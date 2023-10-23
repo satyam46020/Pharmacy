@@ -122,7 +122,6 @@ div {
 .cardComponents-base-statusCardHeading {
     font-size: 30px;
     font-weight: 600;
-    /* margin-bottom: 12px; */
 }
 .cardComponents-base-statusSuccessHeading {
     color: #03a685;

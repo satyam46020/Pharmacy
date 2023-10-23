@@ -22,7 +22,6 @@
 }
 .home-banner-wordings .right-content-image img{
     width: 80%;
-    /* padding-bottom: 3.5rem; */
     margin-left: 40px;
     height: 450px;
 }
@@ -79,7 +78,6 @@
     padding-bottom: 80px;
 }
 .home-services .home-box-container{
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(3,33%);
     gap: 30px;
@@ -216,7 +214,6 @@ section{
 
 
 #home-testimonials{
-    /* border: 1px solid black; */
     padding-bottom: 20px;
 }
 .home-headings-testimonials{
@@ -238,19 +235,15 @@ section{
 }
 .splide{
     height: auto;
-    /* border: 1px solid black; */
     border: none;
 }
 .splide__track{
     padding: 30px;
-    /* border: 1px solid black; */
 }
 .splide__list{
     overflow: visible;
-    /* border: 1px solid black; */
 }
 .splide__slide{
-    /* border: 1px solid black; */
     overflow: visible;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;

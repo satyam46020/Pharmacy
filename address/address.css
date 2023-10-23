@@ -1,7 +1,6 @@
 body {
     font-family: Whitney, Helvetica, Arial, sans-serif !important;
     color: #424553;
-    line-height: 2.428571;
 }
 body {
     font-family: Arial, sans-serif;
@@ -24,24 +23,6 @@ div {
     margin-bottom: 30px;
 }
 
-#header {
-    display: flex;
-    width: 92%;
-    color: rgb(105, 107, 121);
-    font-size: 10px;
-    margin: 20px auto 10px;
-    justify-content: space-between;
-}
-
-.navbarMiddle {
-    letter-spacing: 3px;
-    font-weight: bolder;
-}
-
-.navbarMiddlePayment {
-    color: #20BD99;
-    border-bottom: 2px solid #20BD99;
-}
 
 #paymentNavSecure {
     display: flex;
@@ -96,7 +77,7 @@ div {
     font-size: 14px;
     font-weight: 600;
     padding: 10px;
-    background: #ff3f6c;
+    background: #03a685;
     cursor: pointer;
     text-align: center;
     border: none;
@@ -141,7 +122,7 @@ label {
 
 
 h5 {
-    color: red;
+    color: #03a685;
 }
 
 
@@ -200,7 +181,7 @@ h5 {
     border-radius: 2px;
     border-width: 0px;
     background-color: transparent;
-    color: rgb(255, 63, 108);
+    color: #03a685;
     padding: 0px;
     cursor: pointer;
 }
@@ -250,37 +231,6 @@ textarea {
 .convienceFee {
     margin-top: 10px;
 }
-
-
-
-
-#footer {
-    border-top: 1px solid #F5F5F6;
-    margin: 0 0 10px 0;
-}
-
-#footer #footerContent {
-    display: flex;
-    max-width: 980px;
-    padding-top: 10px;
-    margin: auto;
-    justify-content: space-between;
-}
-
-#footer #footerContentImg img {
-    width: 70px;
-    height: 37px;
-}
-
-#footerContent>a {
-    text-decoration: none;
-    color: #282c3f;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 10px 0;
-}
-
 
 .address{
     background-color: white;

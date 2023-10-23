@@ -69,10 +69,11 @@ document.getElementById("signUp_action").addEventListener("submit", (e) => {
 document.getElementById("signIn_action").addEventListener("submit", (e) => {
 
     e.preventDefault();
+    console.log("clicked on log in")
     let email = document.querySelector("#in_email").value;
     let password = document.querySelector("#in_pass").value;
 
-    const auth = getAuth();
+    const auth = getAuth(app);
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 
@@ -80,11 +81,15 @@ document.getElementById("signIn_action").addEventListener("submit", (e) => {
             const user = userCredential.user;
             console.log("login Succesful")
             showtost("login Succesful");
+            window.location.href = "/index.html";
             // ...
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
+            console.error(`Error code: ${errorCode}`);
+            console.error(`Error message: ${errorMessage}`);
+            showtost(errorMessage)
         });
 
 
@@ -106,6 +111,7 @@ function handleGoogleClick(e) {
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
             const user = result.user;
+            window.location.href = "/index.html"
             // ...
         })
         .catch((error) => {
@@ -122,10 +128,6 @@ function handleGoogleClick(e) {
 googleElements.forEach((element) => {
     element.addEventListener("click", handleGoogleClick);
 });
-
-// document.querySelector("#google").addEventListener("click",()=>{
-//     console.log("clicked")
-// })
 
 
 
@@ -144,8 +146,6 @@ function handleTwitterClick(e) {
     const auth = getAuth();
     signInWithPopup(auth, provider)
         .then((result) => {
-            // This gives you a the Twitter OAuth 1.0 Access Token and Secret.
-            // You can use these server side with your app's credentials to access the Twitter API.
             const credential = TwitterAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
             const secret = credential.secret;

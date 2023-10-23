@@ -21,8 +21,8 @@ function displayData(data) {
         var img = document.createElement("img");
         img.setAttribute("src", elem.image);
 
-        var brand = document.createElement("div");
-        brand.innerText = elem.brand;
+        var problem = document.createElement("div");
+        problem.innerText = elem.problem;
 
         var name = document.createElement("p");
         name.innerText = elem.name;
@@ -59,7 +59,7 @@ function displayData(data) {
         disc.innerText = off + "% OFF";
         disc.style.color = "#f16565";
         totaldisc += parseInt(elem.strikedOffPrice - elem.price) * (parseInt(elem.quantity));
-        prizediv.append(price, strikedOffPrice, disc);
+        prizediv.append(price);
 
         var delivery = document.createElement("div");
         delivery.innerText = "Express Delivery in 2 Days";
@@ -68,7 +68,7 @@ function displayData(data) {
         leftchild.append(img);
         leftchild.setAttribute("class", "leftchild");
         var rightchild = document.createElement("div");
-        rightchild.append(brand, name, sizediv, prizediv, delivery);
+        rightchild.append(name,problem, sizediv, prizediv, delivery);
         rightchild.setAttribute("class", "rightchild");
 
         var crossdiv = document.createElement("div");
@@ -98,15 +98,15 @@ function displayRightside() {
     var mrp1 = document.createElement("div");
     var mrp2 = document.createElement("div");
     mrp1.innerText = "Total MRP";
-    mrp2.innerText = "₹" + totalmrp;
+    mrp2.innerText = "₹" + totalamt;
     mrp2.setAttribute("id", "totalmrp");
-    mrpdiv.append(mrp1, mrp2);
+    mrpdiv.append( mrp2);
 
     var discdiv = document.createElement("div");
     var disc1 = document.createElement("div");
     var disc2 = document.createElement("div");
     disc1.innerText = "Discount on MRP";
-    disc2.innerText = "₹" + totaldisc;
+    disc2.innerText = "₹" + 0;
     disc2.setAttribute("id", "totaldisc");
     discdiv.append(disc1, disc2);
 

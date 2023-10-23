@@ -5,8 +5,6 @@ body {
 
 a {
     text-decoration: none !important;
-    /* Remove underline or other link decorations */
-    /* Add other styling for the Home text, like color, font, etc. */
 }
 
 a > h2 {
@@ -14,9 +12,7 @@ a > h2 {
 }
 
 #headerMain {
-    line-height: 2.428571;
     width: 100%;
-    border-bottom: 1px solid #F5F5F6;
     margin-bottom: 30px;
 }
 
@@ -66,7 +62,6 @@ a > h2 {
 
 #leftBlock {
     padding-right: 20px;
-    border-right: 1px solid #eaeaec;
     padding-top: 32px;
 
 }
@@ -121,7 +116,8 @@ a > h2 {
 
 #offer > div > img {
     width: 18px;
-    height: 18px;/ margin-top: 10px;
+    height: 18px;
+     margin-top: 10px;
     margin-right: 30px;
 }
 

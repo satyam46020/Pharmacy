@@ -1,24 +1,16 @@
 *{
-    /* width: 90%; */
    margin-left: 2%;
    margin-right: 2%;
-    background-color: rgb(245, 245, 245);
-    /* box-sizing: border-box; */
     
     
 }
 
 
-/* .heading{
-    /* margin-left: 5%; */
- 
 #small{
-    /* margin-left: 0em; */
     color: rgb(35, 82, 89);
     margin-block-end: -0.16em;
 }
 #large{
-    /* margin-left: 0em; */
     font-size: 5rem;
     margin-block-start: -0.16em;
 }
@@ -29,7 +21,6 @@
     display: flex;
 }
 
-/* left */
 .left{
 width: 40vh;
 height: 100vh;
@@ -45,7 +36,7 @@ padding-left: 0em;
     background-color: rgb(238 238 238);
 }
 
-ul{
+.left>ul{
     list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -54,7 +45,7 @@ ul{
     padding-inline-start: 0px;
     background-color: rgb(238 238 238);
 }
-ul li{
+.left>ul li{
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight:700;
@@ -63,7 +54,7 @@ ul li{
     font-family: 'Work Sans', sans-serif;
    
 }
-ul li:hover{
+.left>ul li:hover{
     background-color: rgb(197, 219, 226);
     cursor: pointer;
     transition: 0.3s;
@@ -109,19 +100,14 @@ ul li:hover{
 
 
 .card-list{
-    /* background-color: aqua; */
     display: grid;
     grid-template-columns: repeat(3,.5fr);
     grid-gap:20px;
    margin: auto;
    width: 80%;
-   /* align-items: center;
-    justify-content: center; */
 }
 
 .card{
-    /* display: block; */
-   /* border: 1px solid rgb(232, 0, 0); */
    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
    
    
@@ -170,7 +156,7 @@ ul li:hover{
     font-size: 16px;
 }
 
- img {
+ photo {
     padding-top: 20px;
     margin-bottom: 40px;
     transition: 0.3s;
@@ -178,7 +164,7 @@ ul li:hover{
 
 
 
- img:hover {
+ photo:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>login</title>
     <style>
       @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
@@ -12,17 +12,12 @@
         box-sizing: border-box;
       }
 
-      body {
-        /* background: #f6f5f7; */
+      body>div{
         background: url('https://png.pngtree.com/back_origin_pic/04/57/88/bd90d67d6a09e0952d804fbff5511f9e.jpg') no-repeat center center fixed;
-        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-family: "Montserrat", sans-serif;
-        height: 100vh;
-        margin: -20px 0 50px;
       }
 
       h1 {
@@ -54,7 +49,6 @@
       }
       .social-container div:hover{
         cursor: pointer;
-        /* text-decoration: underline; */
       }
 
       button {
@@ -343,60 +337,129 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="../Homepage/navbar.css">
+    <link rel="stylesheet" href="../Homepage/footer.css">
      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
   <body>
-    <div id="tostBox"></div>
-    <div class="container" id="container">
-      <div class="form-container sign-up-container">
-        <form id="signUp_action">
-          <h1>Create Account</h1>
-          <div class="social-container">
-            <div id="google" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></div>
-            <div id="Twitter" class="social"><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></div>
-            <div class="social"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #1859c9;"></i></div>
+    <header>
+      <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
           </div>
-          <span>or use your email for registration</span>
-          <input id="up_name" type="text" placeholder="Name" />
-          <input id="up_email" type="email" placeholder="Email" />
-          <input id="up_pass" type="password" placeholder="Password" />
-          <button id="Sign-Up" class="Sign-Up">Sign Up</button>
-        </form>
+          <div class="menu-items">
+            <li><a href="../Product_page/product.html">Medicines</a></li>
+            <li><a href="#">Doctor</a></li>
+            <li><a href="#">Pharmacy</a></li>
+            <li><a href="#">Other Services</a></li>
+            <li><a href="#">Login</a></li>
+          </div>
       </div>
-      <div class="form-container sign-in-container">
-        <form id="signIn_action">
-          <h1>Sign in</h1>
-          <div class="social-container">
-            <div id="google" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></div>
-            <div id="Twitter" class="social"></i><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></div>
-            <div class="social"><i class="fa-brands fa-linkedin-in fa-xl"  style="color: #1859c9;"></i></div>
-            <!-- <a href="#" onclick="" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></a>
-            <a href="#" class="social"><i class="fa-brands fa-linkedin-in fa-xl"></i></a> -->
-          </div>
-          <span>or use your account</span>
-          <input id="in_email" type="email" placeholder="Email" />
-          <input id="in_pass" type="password" placeholder="Password" />
-          <a href="/forgot.html">Forgot your password?</a>
-          <button>Log In</button>
-        </form>
+
+      <div id="navbar">
+          <a href="../index.html"><img id="homepage-logo" src="../Homepage/images/[removal.ai]_73a82357-798b-4ce6-a251-ce2e13f3a654-png-clipart-logo-physician-medical-prescription-clinic-hospital-others-miscellaneous-text.png" alt="image"></a>
+          <a class="navbar-anchors" href="../Product_page/product.html">Medicines</a>
+          <a class="navbar-anchors" href="#">Doctor</a>
+          <a class="navbar-anchors" href="#">Pharmacy</a>
+          <a class="navbar-anchors" href="#">Other services</a>
       </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>
-              To keep connected with us please login with your personal info
-            </p>
-            <button class="ghost" id="signIn">Log In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Hello, Friend!</h1>
-            <p>Enter your personal details and start journey with us</p>
-            <button class="ghost" id="signUp">Sign Up</button>
-          </div>
+
+      <div id="homepage-icons">
+          <h4 id="username"></h4>
+          
+          <button id="nav_btn" style="border-radius: 0%;padding-top: 11px;font-weight: 500;">Consult Now</button>
+      </div>
+
+  </header>
+  <div><div id="tostBox"></div>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form id="signUp_action">
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <div id="google" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></div>
+          <div id="Twitter" class="social"><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></div>
+          <div class="social"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #1859c9;"></i></div>
+        </div>
+        <span>or use your email for registration</span>
+        <input id="up_name" type="text" placeholder="Name" />
+        <input id="up_email" type="email" placeholder="Email" />
+        <input id="up_pass" type="password" placeholder="Password" />
+        <button id="Sign-Up" class="Sign-Up">Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form id="signIn_action">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <div id="google" class="social"><i class="fa-brands fa-google fa-xl" style="color: #e70d0d;"></i></div>
+          <div id="Twitter" class="social"></i><i class="fa-brands fa-twitter fa-xl" style="color: #1859c9;"></i></div>
+          <div class="social"><i class="fa-brands fa-linkedin-in fa-xl"  style="color: #1859c9;"></i></div>
+        <span>or use your account</span>
+        <input id="in_email" type="email" placeholder="Email" />
+        <input id="in_pass" type="password" placeholder="Password" />
+        <a href="/forgot.html">Forgot your password?</a>
+        <button>Log In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>
+            To keep connected with us please login with your personal info
+          </p>
+          <button class="ghost" id="signIn">Log In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
         </div>
       </div>
     </div>
+  </div></div>
+    
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-row">
+              <div class="footer-col">
+                  <h4>All Medicine</h4>
+                  <ul class="footer-ul">
+                      <li class="footer-li"><a href="#">Health & Care</a></li>
+                      <li class="footer-li"><a href="#">Beauty Care</a></li>
+  
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Doctors</h4>
+                  <ul class="footer-ul">
+                      <li class="footer-li"><a href="#">Physiotherapy</a></li>
+                      <li class="footer-li"><a href="#">Heart Specialist</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Hospital</h4>
+                  <ul class="footer-ul">
+                      <li class="footer-li"><a href="#">Government Listed</a></li>
+                      <li class="footer-li"><a href="#">Top Private</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
   </body>
   <script src="index.js" type="module"></script>
 </html>

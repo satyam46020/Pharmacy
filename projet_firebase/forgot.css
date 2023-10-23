@@ -1,5 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?
-family=Poppins:wght@300;400;500;600;700;800;9008 display-swap"); */
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
 *{
@@ -16,23 +15,20 @@ body{
     min-height: 100vh;
     background: url('https://png.pngtree.com/back_origin_pic/04/57/88/bd90d67d6a09e0952d804fbff5511f9e.jpg') no-repeat center center fixed;
     
-    /* background: rgb(243,243,243); */
     background-size: cover;
 }
 #main {
-    /* border: 2px solid red; */
     width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     height: auto;
 }
 
 
 
 .wrapper {
-    width: 100%; /* Make the wrapper div the same width as the image */
+    width: 100%; 
 }
 #tostBox{
     position: absolute;
@@ -85,7 +81,6 @@ body{
     width: 420px;
     background: #fff;
     border: 2px solid rgb(214, 214, 214);
-    /* backdrop-filter: blur(20px); */
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     color: #fff;
@@ -94,7 +89,6 @@ body{
 }
 
 .wrapper h1{
-    /* font-size: 36px; */
     text-align: center;
     color: black;
 }
@@ -112,16 +106,12 @@ body{
     background: rgb(238,238,238);
     border: none;
     outline: none;
-    /* border: 1px solid  ; */
-    /* border-radius: 40px; */
     font-size: 15px;
     color: rgb(243,243,243);
     padding: 20px 45px 20px 20px;
 }
 
-.Input-box input::placeholder{
-    /* color: rgb(0, 139, 157); */
-}
+
 .Input-box i{
     color: black;
     position: absolute;
@@ -132,8 +122,6 @@ body{
 }
 .forgot{
     display: flex;
-    /* justify-content: space-around; */
-    /* align-content: end; */
     font-size: 15px;
     margin: -15px 0 15px;
 }

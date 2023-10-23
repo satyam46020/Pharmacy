@@ -110,12 +110,9 @@ async function fetchData(url,quaryParams =""){
   
     let cardImg = document.createElement("div");
     cardImg.setAttribute("class","card-img");
-    cardImg.addEventListener("click",()=>{
-        window.location.href = "desc.html";
-    })
   
     let image = document.createElement("img");
-  
+    image.setAttribute("id","photo")
     image.setAttribute("alt","art");
     image.src = `${item.image}`;
   
@@ -147,39 +144,44 @@ async function fetchData(url,quaryParams =""){
     cardBody.append(h5,cprice,a);
     card.append(cardImg,cardBody);
     outer.append(card);
+    cardImg.addEventListener("click",()=>{details(item)});
     mainSection.append(outer);
     
   
   })
 
-   }
-
-   var cart = JSON.parse(localStorage.getItem('cart')) || []
-//    var wishlist = JSON.parse(localStorage.getItem('wishlist')) || []
-
-function addToCart(Element){
-    cart.push(Element)
-    localStorage.setItem("cart", JSON.stringify(cart))
-    console.log(Element)
+}
+function details(ele)
+{
+    localStorage.setItem("details",JSON.stringify(ele))
+    window.location.assign("../product_details/details.html")
 }
 
-// function addToWishlist(Element){
-//     wishlist.push(Element)
-//     localStorage.setItem("wishlist", JSON.stringify(wishlist))
-// }
+   var items = JSON.parse(localStorage.getItem('cartData')) || []
 
-// navbar
+function addToCart(val){
+    const existingItem = items.find(item => item.name === val.name);
+ if (existingItem) {
+  existingItem.quantity = (existingItem.quantity || 1) + 1;
+ }
+ else {
+  const currFav = {
+    image: val.image,
+    name: val.name,
+    price: val.price,
+    problem:val.problem, 
+    quantity: 1, 
+  };
+  
+  items.push(currFav);
 
-let nav_button=document.getElementById("nav_btn");
+}
+    localStorage.setItem("cartData", JSON.stringify(items))
+    console.log(val)
+}
 
-nav_button.addEventListener("click",function(){
-    window.location.href="index.html";
-});
 
-let cart_icon=document.querySelector("i");
 
-cart_icon.addEventListener("click",function(){
-    window.location.href="cart.html";
-});
+
 
 

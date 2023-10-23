@@ -27,7 +27,7 @@
                 <span class="line line3"></span>
             </div>
             <div class="menu-items">
-                <li><a href="">Medicines</a></li>
+                <li><a href="../Product_page/product.html">Medicines</a></li>
                 <li><a href="">Doctor</a></li>
                 <li><a href="">Pharmacy</a></li>
                 <li><a href="">Other Services</a></li>
@@ -36,10 +36,10 @@
         </div>
 
         <div id="navbar">
-            <a href="index.html"><img id="homepage-logo"
-                    src="images/[removal.ai]_73a82357-798b-4ce6-a251-ce2e13f3a654-png-clipart-logo-physician-medical-prescription-clinic-hospital-others-miscellaneous-text.png"
+            <a href="../index.html"><img id="homepage-logo"
+                    src="../Homepage/images/[removal.ai]_73a82357-798b-4ce6-a251-ce2e13f3a654-png-clipart-logo-physician-medical-prescription-clinic-hospital-others-miscellaneous-text.png"
                     alt="image"></a>
-            <a class="navbar-anchors" href="index.html">Medicines</a>
+            <a class="navbar-anchors" href="../Product_page/product.html">Medicines</a>
             <a class="navbar-anchors" href="#">Doctor</a>
             <a class="navbar-anchors" href="#">Pharmacy</a>
             <a class="navbar-anchors" href="#">Other services</a>
@@ -207,8 +207,8 @@
 </html>
 <script>
     var total = JSON.parse(localStorage.getItem("addressTotalObj"));
-    document.getElementById("totalmrp").innerText = total.totalmrp;
-    document.getElementById("totaldisc").innerText = total.totaldisc;
+    document.getElementById("totalmrp").innerText = total.totalamt;
+    document.getElementById("totaldisc").innerText = 0;
     document.getElementById("totalamt").innerText = total.totalamt;
     document.getElementById("priceDetails").innerText = total.totalItem;
 
