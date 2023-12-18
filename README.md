@@ -3,7 +3,8 @@
 
 <h1>Online Medical Store construct week project</h1>
 <h3>Description</h3>
-<p><b>Our team of five accomplished developers collaborated seamlessly over seven days to create a dynamic web project using HTML, CSS, and JS. Leveraging each member's unique skills, we designed an intuitive user interface, ensuring a responsive and visually appealing experience. With efficient communication and task allocation, we successfully integrated interactive features using JavaScript. The collaborative effort resulted in a well-crafted website that meets the project's objectives. Our commitment to the timeline showcases our teamwork and dedication, demonstrating the effectiveness of our coordinated approach to web development. </b></p>
+<p><b>Pharmacy is an innovative Pharmacy Management System designed to streamline and modernize pharmacy operations. This comprehensive software solution empowers pharmacies to efficiently manage inventory and enhance customer service.
+               </b></p>
 <div><img src="/Homepage/images/[removal.ai]_73a82357-798b-4ce6-a251-ce2e13f3a654-png-clipart-logo-physician-medical-prescription-clinic-hospital-others-miscellaneous-text.png" height="300px" width="500px" alt=""></img></div>
 <br/>
 <h3>Preview-</h3>
