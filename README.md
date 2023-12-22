@@ -9,8 +9,8 @@
 <br/>
 <h3>Preview-</h3>
 <ul>
-<li><i>Live Link-<a href="https://653654a73f8e7f009d227893--bespoke-raindrop-bfcf0e.netlify.app/ " target="_blank">Click here</a></i></li>
-<li><i>Code Base-<a href="https://github.com/satyam46020/joyful-ring-9720" target="_blank">Click here</a></i></li>
+<li><i>Live Link-<a href="https://joyful-ring-9720.vercel.app/ " target="_blank">Click here</a></i></li>
+<li><i>Code Base-<a href="https://github.com/satyam46020/Pharmacy" target="_blank">Click here</a></i></li>
 </ul>
 <br/>
 <h3>Tech Used-</h3>
